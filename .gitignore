@@ -10,9 +10,5 @@ npm-debug.*
 *.orig.*
 web-build/
 
-# Tailwind
-tailwind.css
-tailwind.json
-
 # macOS
 .DS_Store
