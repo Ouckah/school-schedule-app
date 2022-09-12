@@ -1,5 +1,4 @@
 /* Components */
-import Welcome from "./components/welcome";
 
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
@@ -16,7 +15,7 @@ const App = () =>
   return (
     <>
       <View style={tailwind('flex flex-row justify-center items-center w-full h-full')}>
-        <Welcome />
+        <Text style={tailwind('font-semibold')}>Hi there!</Text>
         <StatusBar style="auto" />
       </View>
     </>

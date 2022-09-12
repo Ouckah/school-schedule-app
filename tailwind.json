@@ -29,6 +29,11 @@
 			"justifyContent": "center"
 		}
 	},
+	"font-semibold": {
+		"style": {
+			"fontWeight": "600"
+		}
+	},
 	"text-blue-900": {
 		"style": {
 			"--tw-text-opacity": 1,
