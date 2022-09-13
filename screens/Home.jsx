@@ -1,4 +1,7 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
+
+/* Components */
+import ClassCard from '../components/ClassCard';
 
 /* Navigation Imports */
 import { NavigationContainer } from '@react-navigation/native';
@@ -32,7 +35,18 @@ function Home()
                     </View>
 
                     {/* Class Tabs */}
-                    
+                    <ClassCard 
+                        name='CS-101'
+                        location='Zoom Meeting'
+                        startTime='9:00 AM'
+                        endTime='9:50 AM'    
+                    />
+                    <ClassCard 
+                        name='MA-125'
+                        location='North Building 105'
+                        startTime='10:00 AM'
+                        endTime='10:50 AM'
+                    />
 
                     {/* Add Button */}
                     <TouchableOpacity style={tailwind('flex justify-center items-center bg-light-blue w-10 h-10 rounded-full')}>
