@@ -22,14 +22,10 @@ const App = () =>
   const tailwind = useTailwind();
 
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen 
         name='Home' 
-        component={Home}
-        options=
-        {{
-          headerShown: false
-        }} 
+        component={Home} 
       />
     </Stack.Navigator>
   )
