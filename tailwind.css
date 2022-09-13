@@ -1,37 +1,29 @@
-.flex {
-  display: flex
-}
-
 .h-full {
   height: 100%
+}
+
+.h-1\/2 {
+  height: 50%
 }
 
 .w-full {
   width: 100%
 }
 
-.flex-row {
-  flex-direction: row
+.rounded-md {
+  border-radius: 0.375rem
 }
 
-.items-center {
-  align-items: center
+.rounded-xl {
+  border-radius: 0.75rem
 }
 
-.justify-center {
-  justify-content: center
+.rounded-b-xl {
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem
 }
 
-.font-semibold {
-  font-weight: 600
-}
-
-.text-blue-900 {
-  --tw-text-opacity: 1;
-  color: rgb(30 58 138 / var(--tw-text-opacity))
-}
-
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity))
+.bg-dark-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 42 78 / var(--tw-bg-opacity))
 }
