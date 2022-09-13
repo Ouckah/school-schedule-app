@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 /* Navigation Imports */
 import { NavigationContainer } from '@react-navigation/native';
@@ -15,23 +15,39 @@ function Home()
     let date = new Date();
 
     return (
-        // Time & Date Text
-        <View style={tailwind('w-full h-1/2 pt-10 px-5 bg-dark-blue rounded-b-xl')}>
-            <View style={tailwind('flex flex-row justify-between w-full h-1/3')}>
-                <View style={tailwind('flex flex-col justify-center items-start')}>
-                    <Text style={tailwind('text-white font-bold text-4xl')}>Monday</Text>
-                    <Text style={tailwind('text-white font-extralight text-lg opacity-50')}>Sep 12 2022</Text>
+        <>
+            <View style={tailwind('bg-gray-200 w-full h-full')}>
+                <View style={tailwind('flex flex-col justify-between items-center w-full h-1/2 pt-10 pb-5 px-5 bg-dark-blue rounded-b-xl')}>
+                    
+                    {/* Time & Date Text */}
+                    <View style={tailwind('flex flex-row justify-between w-full h-1/3')}>
+                        <View style={tailwind('flex flex-col justify-center items-start')}>
+                            <Text style={tailwind('text-white font-bold text-4xl')}>Monday</Text>
+                            <Text style={tailwind('text-white font-extralight text-lg opacity-50')}>Sep 12 2022</Text>
+                        </View>
+                        <View style={tailwind('flex flex-col justify-center items-end')}>
+                            <Text style={tailwind('font-bold text-white text-4xl')}>8:32</Text>
+                            <Text style={tailwind('text-white font-extralight text-2xl opacity-40')}>AM</Text>
+                        </View>
+                    </View>
+
+                    {/* Class Tabs */}
+                    
+
+                    {/* Add Button */}
+                    <TouchableOpacity style={tailwind('flex justify-center items-center bg-light-blue w-10 h-10 rounded-full')}>
+                        <Text style={tailwind('text-white font-bold text-4xl')}>+</Text>
+                    </TouchableOpacity>
                 </View>
-                <View style={tailwind('flex flex-col justify-center items-end')}>
-                    <Text style={tailwind('font-bold text-white text-4xl')}>8:32</Text>
-                    <Text style={tailwind('text-white font-extralight text-2xl opacity-40')}>AM</Text>
+
+                {/* To Do List */}
+                <View style={tailwind('bg-gray-200 w-full h-1/2 p-6')}>
+                    <View style={tailwind('bg-white w-full h-4/5 rounded-xl p-5')}>
+                        <Text style={tailwind('text-dark-blue font-bold text-4xl')}>To Do</Text>
+                    </View>
                 </View>
             </View>
-        </View>
-
-        // Add Button
-
-        // To Do List
+        </>
     )
 }
 
