@@ -1,21 +1,41 @@
-.h-full {
-  height: 100%
+.flex {
+  display: flex
 }
 
 .h-1\/2 {
   height: 50%
 }
 
+.h-1\/3 {
+  height: 33.333333%
+}
+
 .w-full {
   width: 100%
 }
 
-.rounded-md {
-  border-radius: 0.375rem
+.flex-row {
+  flex-direction: row
 }
 
-.rounded-xl {
-  border-radius: 0.75rem
+.flex-col {
+  flex-direction: column
+}
+
+.items-start {
+  align-items: flex-start
+}
+
+.items-end {
+  align-items: flex-end
+}
+
+.justify-center {
+  justify-content: center
+}
+
+.justify-between {
+  justify-content: space-between
 }
 
 .rounded-b-xl {
@@ -26,4 +46,73 @@
 .bg-dark-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(3 42 78 / var(--tw-bg-opacity))
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem
+}
+
+.pt-10 {
+  padding-top: 2.5rem
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem
+}
+
+.font-bold {
+  font-weight: 700
+}
+
+.font-extralight {
+  font-weight: 200
+}
+
+.font-semibold {
+  font-weight: 600
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.opacity-40 {
+  opacity: 0.4
+}
+
+.opacity-50 {
+  opacity: 0.5
 }

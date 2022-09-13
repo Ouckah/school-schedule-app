@@ -6,14 +6,16 @@ module.exports = {
     './components/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    colors: 
+    extend: 
     {
-      transparent: 'transparent',
-      current: 'currentColor',
-      'dark-blue': '#032a4e',
-      'light-blue': '#428cd4'
+      colors: 
+      {
+        transparent: 'transparent',
+        current: 'currentColor',
+        'dark-blue': '#032a4e',
+        'light-blue': '#428cd4'
+      },
     },
-    extend: {},
   },
   plugins: [],
   corePlugins: require('tailwind-rn/unsupported-core-plugins'),
