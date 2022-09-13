@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 /* Screen Imports */
 import Home from './screens/Home'
+import Daily from './screens/Daily';
 
 /* Tailwind Imports */
 import { TailwindProvider } from 'tailwind-rn';
@@ -18,10 +19,8 @@ const App = () =>
 
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen 
-        name='Home' 
-        component={Home} 
-      />
+      <Stack.Screen name='Home' component={Home} />
+      <Stack.Screen name='Daily' component={Daily} />
     </Stack.Navigator>
   )
 }

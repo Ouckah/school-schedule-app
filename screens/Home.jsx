@@ -2,6 +2,7 @@ import { Text, View, TouchableOpacity } from 'react-native';
 
 /* Components */
 import ClassCard from '../components/ClassCard';
+import FooterNav from '../components/FooterNav';
 
 /* Navigation Imports */
 import { NavigationContainer } from '@react-navigation/native';
@@ -9,7 +10,7 @@ import { NavigationContainer } from '@react-navigation/native';
 /* Tailwind Imports */
 import { useTailwind } from 'tailwind-rn'
 
-function Home()
+function Home({ navigation })
 {
     // tailwind 
     const tailwind = useTailwind();
@@ -20,7 +21,7 @@ function Home()
     return (
         <>
             <View style={tailwind('bg-gray-200 w-full h-full')}>
-                <View style={tailwind('flex flex-col justify-between items-center w-full h-1/2 pt-10 pb-5 px-5 bg-dark-blue rounded-b-xl')}>
+                <View style={tailwind('flex flex-col justify-between items-center w-full h-1/2 pt-10 pb-2 px-5 bg-dark-blue rounded-b-xl')}>
                     
                     {/* Time & Date Text */}
                     <View style={tailwind('flex flex-row justify-between w-full h-1/3')}>
@@ -55,11 +56,16 @@ function Home()
                 </View>
 
                 {/* To Do List */}
-                <View style={tailwind('bg-gray-200 w-full h-1/2 p-6')}>
-                    <View style={tailwind('bg-white w-full h-4/5 rounded-xl p-5')}>
+                <View style={tailwind('bg-gray-200 w-full h-2/5 px-6 py-3')}>
+                    <View style={tailwind('bg-white w-full h-full rounded-xl p-5')}>
                         <Text style={tailwind('text-dark-blue font-bold text-4xl')}>To Do</Text>
                     </View>
                 </View>
+
+                {/* Footer */}
+                <FooterNav 
+                    navigation={navigation}
+                />
             </View>
         </>
     )
