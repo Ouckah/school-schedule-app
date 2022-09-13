@@ -38,6 +38,10 @@
   height: 25%
 }
 
+.h-1\/5 {
+  height: 20%
+}
+
 .w-full {
   width: 100%
 }
@@ -84,6 +88,10 @@
 
 .justify-between {
   justify-content: space-between
+}
+
+.justify-evenly {
+  justify-content: space-evenly
 }
 
 .self-start {
@@ -146,6 +154,14 @@
 
 .p-2 {
   padding: 0.5rem
+}
+
+.p-3 {
+  padding: 0.75rem
+}
+
+.p-4 {
+  padding: 1rem
 }
 
 .px-5 {
@@ -227,6 +243,10 @@
 
 .font-extralight {
   font-weight: 200
+}
+
+.font-light {
+  font-weight: 300
 }
 
 .text-white {

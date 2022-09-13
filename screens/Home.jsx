@@ -26,11 +26,11 @@ function Home()
                     <View style={tailwind('flex flex-row justify-between w-full h-1/3')}>
                         <View style={tailwind('flex flex-col justify-center items-start')}>
                             <Text style={tailwind('text-white font-bold text-4xl')}>Monday</Text>
-                            <Text style={tailwind('text-white font-extralight text-lg opacity-50')}>Sep 12 2022</Text>
+                            <Text style={tailwind('text-white font-light text-lg opacity-50')}>Sep 12 2022</Text>
                         </View>
                         <View style={tailwind('flex flex-col justify-center items-end')}>
                             <Text style={tailwind('font-bold text-white text-4xl')}>8:32</Text>
-                            <Text style={tailwind('text-white font-extralight text-2xl opacity-40')}>AM</Text>
+                            <Text style={tailwind('text-white font-light text-2xl opacity-40')}>AM</Text>
                         </View>
                     </View>
 
